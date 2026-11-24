@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Казанский исламский университет — официальный портал</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <!-- Панель для слабовидящих (ГОСТ) -->
+  <div class="a11y-bar" id="a11y-bar">
+    <div class="container a11y-bar__inner">
+      <div class="a11y-group">
+        <span>Размер шрифта:</span>
+        <button class="a11y-btn" data-font="md">Обычный</button>
+        <button class="a11y-btn" data-font="lg">Крупный</button>
+        <button class="a11y-btn" data-font="xl">Очень крупный</button>
+      </div>
+      <div class="a11y-group">
+        <span>Контраст:</span>
+        <button class="a11y-btn" data-theme="default">Обычный</button>
+        <button class="a11y-btn" data-theme="bw">Чёрным по белому</button>
+        <button class="a11y-btn" data-theme="dark">Светлым по чёрному</button>
+      </div>
+      <div class="a11y-group">
+        <button class="a11y-btn" id="toggle-imgs">Скрыть фото</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Верхняя служебная строка -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <div>📍 г. Казань, ул. Газовая, д. 19 · 📞 +7 (843) 277-55-36</div>
+      <div class="topbar__links">
+        <button id="toggle-a11y">👁 Версия для слабовидящих</button>
+        <a href="http://e.kazankiu.ru/" target="_blank" rel="noopener" class="badge-eios">ЭИОС ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Основная шапка -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#home" class="brand" data-view="home">
+        <div class="brand__emblem">КИУ</div>
+        <div>
+          <div class="brand__title">Казанский исламский университет</div>
+          <div class="brand__sub">Образовательная организация высшего образования · с 1998 года</div>
+        </div>
+      </a>
+
+      <button class="burger" id="mobile-menu-btn" aria-label="Меню">☰</button>
+
+      <nav class="nav" id="main-nav">
+        <button class="nav__link active" data-view="home">Главная</button>
+        <button class="nav__link" data-view="abiturient">Абитуриенту</button>
+        <button class="nav__link" data-view="schedule">Расписание</button>
+        <button class="nav__link" data-view="svedeniya">Сведения об ОО</button>
+        <button class="nav__link" data-view="science">Наука</button>
+        <button class="nav__link" data-view="contacts">Контакты</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- РАЗДЕЛ 1: ГЛАВНАЯ -->
+    <section class="view active" id="view-home">
+      <div class="hero">
+        <div>
+          <span class="hero__tag">Приёмная кампания 2026 / 2027</span>
+          <h1>Традиции исламского образования в современном формате</h1>
+          <p>Высшее и среднее профессиональное религиозное образование в Казани: исламские и коранические науки, очная, вечерняя и дистанционная формы обучения.</p>
+          <div class="hero__actions">
+            <button class="btn btn--gold" data-view="abiturient">Поступающим 2026</button>
+            <button class="btn btn--ghost" data-view="schedule">Расписание занятий</button>
+          </div>
+        </div>
+        <div class="hero__stats">
+          <div>
+            <div class="stat__val">1998</div>
+            <div class="stat__lbl">год основания университета</div>
+          </div>
+          <div>
+            <div class="stat__val">45 000+</div>
+            <div class="stat__lbl">единиц в библиотечном фонде</div>
+          </div>
+          <div>
+            <div class="stat__val">3 формы</div>
+            <div class="stat__lbl">очная, вечерняя и заочная (ДОТ)</div>
+          </div>
+          <div>
+            <div class="stat__val">2 корпуса</div>
+            <div class="stat__lbl">ул. Газовая, 19 и ул. Цветочная, 24</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quick-grid">
+        <button class="quick-card" data-view="abiturient">
+          <div class="quick-card__icon">01</div>
+          <h3>Абитуриенту 2026</h3>
+          <p>Направления, проходные баллы, стоимость и электронная подача документов</p>
+        </button>
+        <button class="quick-card" data-view="schedule">
+          <div class="quick-card__icon">02</div>
+          <h3>Расписание пар</h3>
+          <p>Актуальные графики 1 семестра 2026/2027 для всех отделений и групп</p>
+        </button>
+        <button class="quick-card" data-view="svedeniya">
+          <div class="quick-card__icon">03</div>
+          <h3>Сведения и документы</h3>
+          <p>15 обязательных разделов Рособрнадзора и быстрый поиск по PDF-базе</p>
+        </button>
+        <button class="quick-card" data-view="contacts">
+          <div class="quick-card__icon">04</div>
+          <h3>Контакты и кампус</h3>
+          <p>Телефоны отделов, деканата, кафедр, мечети «Энилер» и общежитий</p>
+        </button>
+      </div>
+
+      <div class="home-split">
+        <div>
+          <div class="section-head">
+            <div>
+              <h2>Новости университета</h2>
+              <p>События, конкурсы, симпозиумы и учебная жизнь КИУ</p>
+            </div>
+            <a class="btn btn--outline" href="https://kazankiu.ru/news" target="_blank" rel="noopener">Архив новостей ↗</a>
+          </div>
+          <div class="news-grid" id="home-news-grid"></div>
+        </div>
+
+        <aside class="side-stack">
+          <div class="card rector-quote">
+            <small style="color:var(--accent);font-weight:700;text-transform:uppercase;">Слово ректора</small>
+            <blockquote>
+              «Конечно, вера для человека создает определенные ограничения. Но нельзя сказать, что она выводит его за рамки того, что принято считать современным человеком. Этот человек такой же продвинутый, образованный».
+            </blockquote>
+            <div class="rector-meta">
+              <strong>Мухаметшин Рафик Мухаметшович</strong>
+              <span>Ректор Казанского исламского университета</span>
+            </div>
+          </div>
+
+          <div class="card support-card">
+            <h3 style="margin:0;font-family:var(--font-serif);font-size:1.5rem;">Поддержка университета</h3>
+            <p>Официальный сбор пожертвований на развитие программ и поддержку студентов КИУ.</p>
+            <a class="btn btn--gold" href="https://halalcard.ru/sadaqa/organization/10/eniler/235/sbor-na-podderzhku-kazanskogo-islamskogo-universiteta#payment" target="_blank" rel="noopener">Поддержать проект ↗</a>
+          </div>
+
+          <div class="card">
+            <h3 style="margin:0 0 8px;font-size:1rem;">Приёмная комиссия</h3>
+            <p style="margin:0 0 10px;font-size:0.88rem;color:var(--text-muted)">
+              Пн–Пт: 9:00–16:00 (перерыв 12:00–13:15)<br>
+              Каб. 121, ул. Газовая, 19
+            </p>
+            <strong style="display:block;font-size:1.05rem;color:var(--primary)">+7 (843) 251-01-55</strong>
+            <a href="mailto:priem-kiu@mail.ru" style="font-size:0.88rem;">priem-kiu@mail.ru</a>
+          </div>
+        </aside>
+      </div>
+
+      <div class="section-head">
+        <div>
+          <h2>Партнёры и государственные порталы</h2>
+        </div>
+      </div>
+      <div class="partners-grid" id="partners-grid"></div>
+    </section>
+
+    <!-- РАЗДЕЛ 2: АБИТУРИЕНТУ -->
+    <section class="view" id="view-abiturient">
+      <div class="section-head">
+        <div>
+          <h2>Абитуриенту · 2026 / 2027 учебный год</h2>
+          <p>Направления подготовки, минимальные баллы, дистанционная подача и документы приёмной комиссии</p>
+        </div>
+        <a class="btn btn--primary" href="mailto:priem-kiu@mail.ru">Подать запрос на priem-kiu@mail.ru</a>
+      </div>
+
+      <div class="card" style="margin-bottom:24px;border-left:4px solid var(--primary)">
+        <h3 style="margin:0 0 8px;">Дистанционная подача документов</h3>
+        <p style="margin:0;font-size:0.93rem;color:var(--text-muted)">
+          Начало приёма запросов — <strong>20 июня</strong>. Завершение приёма на высшее образование по внутренним испытаниям — <strong>4 августа</strong>, на СПРО — <strong>31 июля</strong>.
+          Отправьте письмо с личной почты на <strong>priem-kiu@mail.ru</strong>, указав ФИО, дату рождения, направление и форму обучения, предыдущее образование, гражданство и телефон.
+        </p>
+      </div>
+
+      <h3>Высшее религиозное образование (бакалавриат)</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>№</th>
+              <th>Направление и профиль</th>
+              <th>Квалификация</th>
+              <th>Форма и срок</th>
+              <th>Вступительные испытания (мин. балл)</th>
+            </tr>
+          </thead>
+          <tbody id="abit-vo-table"></tbody>
+        </table>
+      </div>
+
+      <h3>Среднее профессиональное религиозное образование (СПРО)</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>№</th>
+              <th>Направление и профиль</th>
+              <th>Квалификация</th>
+              <th>Форма и срок</th>
+              <th>Вступительные испытания</th>
+              <th>Стоимость (2026/2027)</th>
+            </tr>
+          </thead>
+          <tbody id="abit-spro-table"></tbody>
+        </table>
+      </div>
+
+      <h3>Документы приёмной комиссии</h3>
+      <div class="doc-grid" id="abit-docs-list"></div>
+    </section>
+
+    <!-- РАЗДЕЛ 3: РАСПИСАНИЕ -->
+    <section class="view" id="view-schedule">
+      <div class="section-head">
+        <div>
+          <h2>Расписание занятий и сессий</h2>
+          <p>Актуальные файлы расписания на 2026–2027 учебный год (подготовлено к интеграции с инфоэкранами в холле)</p>
+        </div>
+      </div>
+      <div class="schedule-grid" id="schedule-grid"></div>
+    </section>
+
+    <!-- РАЗДЕЛ 4: СВЕДЕНИЯ ОБ ОО И ДОКУМЕНТЫ -->
+    <section class="view" id="view-svedeniya">
+      <div class="section-head">
+        <div>
+          <h2>Сведения об образовательной организации</h2>
+          <p>Обязательные подразделы по стандарту Рособрнадзора и единый каталог документов КИУ</p>
+        </div>
+      </div>
+
+      <div class="sved-grid" id="svedeniya-grid"></div>
+
+      <div class="section-head" style="margin-top:32px;">
+        <div>
+          <h2>Поиск по базе документов</h2>
+          <p>Устав, лицензия, учебные планы, ОПОП, отчёты и положения</p>
+        </div>
+      </div>
+
+      <div class="controls-bar">
+        <input type="search" class="input" id="docs-search" placeholder="Найти документ (например: Устав, ОПОП, 2026, расписание)...">
+        <div class="pills" id="docs-filter">
+          <button class="pill active" data-cat="Все">Все</button>
+          <button class="pill" data-cat="Документы">Документы</button>
+          <button class="pill" data-cat="Образование">Образование</button>
+          <button class="pill" data-cat="Абитуриентам">Абитуриентам</button>
+          <button class="pill" data-cat="Наука">Наука</button>
+          <button class="pill" data-cat="Воспитание">Воспитание</button>
+        </div>
+      </div>
+
+      <div class="doc-grid" id="docs-list"></div>
+    </section>
+
+    <!-- РАЗДЕЛ 5: НАУКА И ВОСПИТАТЕЛЬНАЯ РАБОТА -->
+    <section class="view" id="view-science">
+      <div class="section-head">
+        <div>
+          <h2>Научная и воспитательная деятельность</h2>
+          <p>Исследовательские направления кафедр, планы и отчёты НИР, студенческие проекты</p>
+        </div>
+      </div>
+
+      <div class="contacts-grid" style="margin-bottom:28px;">
+        <div class="card">
+          <h3 style="margin-top:0;">Кафедра гуманитарных дисциплин и арабского языка</h3>
+          <p style="font-size:0.9rem;color:var(--text-muted);margin-bottom:0;">
+            История ислама в России, татарское богословское наследие, сравнительная теология и современные методики преподавания арабского, татарского, русского и английского языков.
+          </p>
+        </div>
+        <div class="card">
+          <h3 style="margin-top:0;">Кафедра религиозных дисциплин</h3>
+          <p style="font-size:0.9rem;color:var(--text-muted);margin-bottom:0;">
+            Вероучение ислама и толкование первоисточников, возвращение в научный оборот наследия татарских богословов, вопросы исламского права и финансово-правовой сферы.
+          </p>
+        </div>
+      </div>
+
+      <h3>Документы по науке и воспитательной работе</h3>
+      <div class="doc-grid" id="science-docs-list"></div>
+    </section>
+
+    <!-- РАЗДЕЛ 6: КОНТАКТЫ -->
+    <section class="view" id="view-contacts">
+      <div class="section-head">
+        <div>
+          <h2>Контакты и справочник отделов</h2>
+          <p>Руководство, деканат, кафедры, приёмная комиссия, мечеть и общежития</p>
+        </div>
+      </div>
+
+      <div class="controls-bar">
+        <input type="search" class="input" id="contacts-search" placeholder="Поиск по фамилии, отделу или номеру кабинета...">
+      </div>
+
+      <div class="contacts-grid" id="contacts-grid"></div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <h4>Казанский исламский университет</h4>
+          <p style="font-size:0.86rem;line-height:1.5;margin:0;">
+            МРО ООВО «Казанский исламский университет»<br>
+            420049, Республика Татарстан, г. Казань, ул. Газовая, д. 19<br>
+            Приёмная: +7 (843) 277-55-36 · Приёмная комиссия: +7 (843) 251-01-55
+          </p>
+        </div>
+        <div>
+          <h4>Навигация</h4>
+          <a href="#abiturient" data-view="abiturient">Абитуриенту</a>
+          <a href="#schedule" data-view="schedule">Расписание</a>
+          <a href="#svedeniya" data-view="svedeniya">Сведения об организации</a>
+          <a href="#contacts" data-view="contacts">Контакты</a>
+        </div>
+        <div>
+          <h4>Ресурсы и соцсети</h4>
+          <a href="http://e.kazankiu.ru/" target="_blank" rel="noopener">Электронная среда (ЭИОС) ↗</a>
+          <a href="https://vk.com/riu_kazan" target="_blank" rel="noopener">ВКонтакте ↗</a>
+          <a href="https://max.ru/riu_kazan" target="_blank" rel="noopener">MAX ↗</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 1998–2026 Казанский исламский университет</span>
+        <span>Приволжский район, г. Казань</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
